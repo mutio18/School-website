@@ -1,0 +1,358 @@
+/* ---------------------- */
+/* GLOBAL PAGE SETTINGS   */
+/* ---------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ---------------------- */
+/* HEADER SECTION         */
+/* ---------------------- */
+.site-header {
+  text-align: center;
+  background: #115829;
+  color: white;
+  padding: 25px 10px;
+}
+
+.site-header p {
+  margin: 5px 0 0;
+  font-size: 16px;
+}
+
+/* ---------------------- */
+/* NAVIGATION BAR         */
+/* ---------------------- */
+nav {
+  background:white;
+  padding: 12px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------- */
+/* HERO BANNER            */
+/* ---------------------- */
+.hero {
+  background: linear-gradient(to right, #115829, #115829);
+  color: white;
+  text-align: center;
+  padding: 20px 15px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* ---------------------- */
+/* MAIN CONTENT           */
+/* ---------------------- */
+.content p {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  font-size: 16px;
+}
+
+/* ---------------------- */
+/* FOOTER                 */
+/* ---------------------- */
+footer {
+  background: #115829;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* Side-by-side content boxes */
+.content-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  flex: 1;
+  min-width: 250px;
+  border-top: 5px solid #115829;
+}
+
+.box h3 {
+  margin-top: 0;
+  color: #115829;
+  font-size: 16px;
+  text-align: center;
+}
+
+.box p {
+  font-size: 16px;
+  text-align: center;
+}
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown menu (hidden by default) */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 180px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+}
+
+/* Dropdown menu items */
+.dropdown-menu li {
+  display: block;
+  text-align: left;
+}
+
+.dropdown-menu li a {
+  color: #115829;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.dropdown-menu li a:hover {
+  background: #115829;
+  color: white;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.section-title {
+  text-align: center;
+  color: #115829;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+/* ====================================
+   LEADERSHIP PAGE STYLES
+   ==================================== */
+
+/* --- Page Hero --- */
+.page-hero {
+    background: linear-gradient(135deg, #115829, #115829);
+    color: #fff;
+    padding: 60px 20px 50px;
+    text-align: center;
+}
+
+.page-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.page-hero p {
+    font-size: 1.2rem;
+    opacity: 0.85;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* --- Leadership Section --- */
+.leadership-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+}
+
+/* --- Category Headings --- */
+.leadership-category {
+    margin-bottom: 50px;
+}
+
+.leadership-category h2 {
+    font-size: 2rem;
+    color:#115829;
+    border-bottom: 4px solid #115829;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+/* --- Individual Leader Card --- */
+.leader-card {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease;
+}
+
+.leader-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.10);
+}
+
+/* --- Photo --- */
+.leader-photo {
+    flex: 0 0 180px;  /* Fixed width, won't shrink */
+    height: 200px;
+}
+
+.leader-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Crops to fill square nicely */
+    border-radius: 10px;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Info Side --- */
+.leader-info {
+    flex: 1;  /* Takes remaining space */
+}
+
+.leader-info h3 {
+    font-size: 1.6rem;
+    color: #115829;
+    margin-bottom: 2px;
+}
+
+.leader-title {
+    font-size: 1rem;
+    color: #115829;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.leader-bio {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+.leader-role {
+    font-size: 0.95rem;
+    color: #333;
+    background: #eef3f7;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border-left: 4px solid #115829;
+}
+
+.leader-role strong {
+    color: #115829;
+}
+
+/* --- Responsive: Stack on Mobile --- */
+@media (max-width: 768px) {
+    .leader-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .leader-photo {
+        flex: 0 0 160px;
+        width: 160px;
+        height: 160px;
+    }
+
+    .leader-role {
+        text-align: left;
+    }
+
+    .page-hero h1 {
+        font-size: 2.0rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .leader-photo {
+        flex: 0 0 130px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .leader-info h3 {
+        font-size: 1.3rem;
+    }
+}
+/* SCHOOL NAVIGATION MENU */
+.school-nav {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 15px 20px;
+  background: #ffffff;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.school-nav a {
+  padding: 10px 15px;
+  background: #115829;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.school-nav a:hover {
+  background: #115829;
+}
