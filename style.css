@@ -356,3 +356,372 @@ footer {
 .school-nav a:hover {
   background: #115829;
 }
+/* ============================================
+   PROGRAMMES PAGE STYLES (Matching #115829 Theme)
+   ============================================ */
+
+/* --- Programmes Hero --- */
+.programmes-hero {
+    background: linear-gradient(135deg, #115829, #1a7a3a);
+    color: #fff;
+    padding: 60px 20px 50px;
+    text-align: center;
+}
+
+.programmes-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.programmes-hero p {
+    font-size: 1.2rem;
+    opacity: 0.85;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* --- Intro Section --- */
+.intro-section {
+    background: #fff;
+    padding: 40px 20px;
+    border-bottom: 1px solid #e8ecf0;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* ============================================
+   SCHOOL CARDS GRID
+   ============================================ */
+.schools-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+/* --- Individual School Card --- */
+.school-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 6px solid #115829;
+}
+
+.school-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* --- School Header --- */
+.school-header {
+    background: linear-gradient(135deg, #115829, #1a7a3a);
+    color: #fff;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.school-icon {
+    font-size: 2.2rem;
+}
+
+.school-header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.school-header h2 br {
+    display: none;
+}
+
+/* --- School Body --- */
+.school-body {
+    padding: 25px 25px 30px;
+}
+
+.department-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.department-link h3 {
+    font-size: 1.15rem;
+    color: #115829;
+    font-weight: 600;
+    margin: 0;
+}
+
+.btn-dept {
+    display: inline-block;
+    background: #115829;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-dept:hover {
+    background: #0d4621;
+    transform: scale(1.03);
+    text-decoration: none;
+}
+
+/* --- Badges --- */
+.programme-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0 14px;
+}
+
+.badge {
+    background: #e8f0ea;
+    color: #115829;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.dept-desc {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: 4px;
+}
+
+/* ============================================
+   STATS SECTION
+   ============================================ */
+.stats-section {
+    background: #115829;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.stat-label {
+    font-size: 1rem;
+    opacity: 0.85;
+    letter-spacing: 1px;
+}
+
+/* ============================================
+   DEPARTMENT DETAIL PAGES
+   ============================================ */
+
+.dept-hero {
+    background: linear-gradient(135deg, #115829, #1a7a3a);
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.dept-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 6px;
+}
+
+.dept-hero p {
+    font-size: 1.1rem;
+    opacity: 0.85;
+}
+
+.dept-detail {
+    background: #fff;
+    padding: 40px 30px;
+    max-width: 1100px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.dept-overview h2,
+.programme-list h2 {
+    font-size: 1.6rem;
+    color: #115829;
+    border-bottom: 3px solid #115829;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.dept-overview p {
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.programme-group {
+    margin-bottom: 28px;
+}
+
+.programme-group h3 {
+    font-size: 1.1rem;
+    color: #115829;
+    margin-bottom: 8px;
+}
+
+.programme-group ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.programme-group ul li {
+    padding: 6px 0 6px 24px;
+    border-bottom: 1px solid #f0f2f5;
+    position: relative;
+}
+
+.programme-group ul li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #115829;
+    font-weight: bold;
+}
+
+.programme-group p {
+    background: #f5f7fa;
+    padding: 12px 18px;
+    border-radius: 8px;
+    border-left: 4px solid #115829;
+    color: #333;
+}
+
+.btn-back {
+    display: inline-block;
+    margin-top: 20px;
+    color: #115829;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 24px;
+    border: 2px solid #115829;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    background: #115829;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* --- Tablets --- */
+@media (max-width: 900px) {
+    .schools-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .programmes-hero h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* --- Mobile --- */
+@media (max-width: 600px) {
+    .programmes-hero {
+        padding: 40px 15px 30px;
+    }
+
+    .programmes-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .programmes-hero p {
+        font-size: 1rem;
+    }
+
+    .school-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .school-header h2 br {
+        display: block;
+    }
+
+    .school-body {
+        padding: 18px;
+    }
+
+    .department-link {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn-dept {
+        width: 100%;
+        text-align: center;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .dept-detail {
+        padding: 25px 18px;
+        margin: 20px 15px;
+    }
+
+    .dept-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .dept-hero p {
+        font-size: 0.95rem;
+    }
+}
