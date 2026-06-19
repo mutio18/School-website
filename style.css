@@ -725,3 +725,147 @@ footer {
         font-size: 0.95rem;
     }
 }
+/* ============================================
+   SIDE-BY-SIDE CONTACT GRID
+   ============================================ */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 40px;
+    max-width: 1100px;
+    margin: 30px auto 0;
+}
+
+/* --- Style for both columns --- */
+.contact-form-col,
+.contact-info-col {
+    background: white;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    border-top: 5px solid #115829;
+}
+
+.contact-form-col h2,
+.contact-info-col h2 {
+    color: #115829;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* --- Form Styles (inside the left column) --- */
+.contact-form .form-group {
+    margin-bottom: 16px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: 600;
+    color: #115829;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    box-sizing: border-box;
+    background: #f9fbfa;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #115829;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(17, 88, 41, 0.1);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-submit {
+    background: #115829;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background: #0d4621;
+}
+
+/* --- Right Column Details --- */
+.contact-detail-item {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.contact-detail-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.contact-detail-item strong {
+    display: block;
+    color: #115829;
+    font-size: 1rem;
+    margin-bottom: 3px;
+}
+
+.contact-detail-item p {
+    margin: 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* --- Map Container --- */
+.map-container {
+    margin-top: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.map-frame {
+    width: 100%;
+    height: 250px;
+    border: 0;
+    display: block;
+}
+
+/* ============================================
+   RESPONSIVE - STACK ON MOBILE
+   ============================================ */
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr; /* Single column */
+        gap: 25px;
+        margin: 20px 15px 0;
+    }
+
+    .contact-form-col,
+    .contact-info-col {
+        padding: 20px;
+    }
+}

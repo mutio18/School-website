@@ -11,12 +11,136 @@
     <p>Inspire, Innovate, Impact</p>
 </header>
 <body>
-    <h1>Contact Us</h1>
-    <p>If you have any questions or need assistance, please feel free to reach out to us using the information below:</p>
+
+    <!-- Navigation -->
+    <nav>
     <ul>
-        <li><strong>Phone:</strong> +1 (123) 456-7890</li>
-        <li><strong>Email:</strong> info@mucoschool.edu</li>
-        <li><strong>Address:</strong> 123 Education Lane, Learning City, LC 12345</li>
+        <li><a href="index.html">Home</a></li>
+
+        <!-- ABOUT DROPDOWN -->
+        <li class="dropdown">
+            <a href="about.html">About</a>
+            <ul class="dropdown-menu">
+                <li><a href="about.html">Overview</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="leadership.html">Leadership</a></li>
+            </ul>
+        </li>
+
+        <!-- ADMISSIONS DROPDOWN -->
+        <li class="dropdown">
+            <a href="Admissions.html">Admissions</a>
+            <ul class="dropdown-menu">
+                <li><a href="Admissions.html">Overview</a></li>
+                <li><a href="application.html">Application Procedures</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="payments.html">Payment Methods</a></li>
+            </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="dropdown">
+            <a href="programmes.html">Academics</a>
+            <ul class="dropdown-menu">
+                <li><a href="programmes.html">Programmes</a></li>
+                <li><a href="courses.html">Courses</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="portal.html">Portals</a>
+            <ul class="dropdown-menu">
+                <li><a href="student-portal.html">Student Portal</a></li>
+                <li><a href="staff-portal.html">Staff Portal</a></li>
+                <li><a href="alumni-portal.html">Alumni Portal</a></li>
+            </ul>
+        </li>
     </ul>
+</nav>
+
+<section class="hero">
+    <h1>Contact Us</h1>
+    <p>Reach us at Makueni University College</p>
+</section>
+
+
+    <section class="content">
+        <p>Get in touch with our admissions office, academic departments, or support services.</p>
+    <div class="contact-grid">
+        <div class="contact-form-col">
+            <h2>Send us a Message</h2>
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required />   </div>
+
+            <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+                </div>
+
+             <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                    <option value="">Select a subject...</option>
+                    <option value="admissions">Admissions Enquiry</option>
+                    <option value="academics">Academic Programmes</option>
+                    <option value="finance">Fees &amp; Payments</option>
+                    <option value="general">General Enquiry</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- RIGHT COLUMN: Your Chosen Content -->
+        <div class="contact-info-col">
+            <h2>Get in Touch</h2>
+            <p>You can also reach us through the following channels:</p>
+
+            <!-- Example: Contact Details -->
+            <div class="contact-detail-item">
+                <strong>Postal Address</strong>
+                <p>Makueni University College<br>P.O. Box 441 - 90300<br>Makueni, Kenya</p>
+            </div>
+
+            <div class="contact-detail-item">
+                <strong>Telephone</strong>
+                <p>+254 712 345 678</p>
+            </div>
+
+            <div class="contact-detail-item">
+                <strong>Email</strong>
+                <p>info@muco.ac.ke</p>
+            </div>
+
+           <div class="map-container">
+    <iframe
+        class="map-frame"
+        title="Map location for Makueni University College"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.35853743783!2d36.68219672215106!3d-1.3028611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sMakueni%2C%20Kenya!5e0!3m2!1sen!2s!4v1688036200000!5m2!1sen!2s"
+        allowfullscreen
+        loading="lazy">
+    </iframe>
+</div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Makueni University College • All Rights Reserved</p>
+        <p>Located in Makueni, kenya</p>
+    </footer>
+
 </body>
 </html>
